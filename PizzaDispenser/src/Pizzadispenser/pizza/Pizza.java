@@ -29,9 +29,24 @@ public abstract class Pizza {
                 isValidSize = true;
             }
         }
-        if(isValidSize = false)
+        switch pricebysize(price)
         {
-            throw new Exception("Invalid pizza size selected");
+            case 25:
+                price+=5;
+                break;
+            case 30:
+                price+=10;
+                break;
+            case 35:
+                price+=14;
+                break;
+            default:
+                throw new Exception("Invalid pizza size detected")
         }
+    }
+
+    public double getPrice()
+    {
+        return price;
     }
 }
