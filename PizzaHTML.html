@@ -25,7 +25,7 @@
         var container_block;
         pizzaCount++;
         block_to_insert = document.createElement( 'div' );
-        block_to_insert.innerHTML = ' <h1>Pizza '+pizzaCount+'</h1><form id="form1" action="Pizza.php"> <p>Type Pizza</p><select id="pizza'+pizzaCount+'" name="pizza1"><option value="Margharita">Margharita</option><option value="Hawaii">Hawaii</option><option value="Peperoni">Peperoni</option></select><br><p>Grootte Pizza</p><input type="radio" id="sizeGroot" name="size'+pizzaCount+'" value="Groot" checked> Groot<input type="radio" id="sizeKlein" name="size'+pizzaCount+'" value="Klein"> Klein<br><br></form>';
+        block_to_insert.innerHTML = ' <h1>Pizza '+pizzaCount+'</h1><form id="form1" action="PizzaHTML.html"> <p>Type Pizza</p><select id="pizza'+pizzaCount+'" name="pizza1"><option value="Margharita">Margharita</option><option value="Hawaii">Hawaii</option><option value="Peperoni">Peperoni</option></select><br><p>Grootte Pizza</p><input type="radio" id="sizeGroot" name="size'+pizzaCount+'" value="Groot" checked> Groot<input type="radio" id="sizeKlein" name="size'+pizzaCount+'" value="Klein"> Klein<br><br></form>';
         container_block = document.getElementById( 'formcontainer' );
         container_block.appendChild( block_to_insert );
         block_to_insert.id = 'inserted_block_id' ;
